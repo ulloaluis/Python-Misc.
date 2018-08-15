@@ -11,8 +11,8 @@ def binom_string(values, n):
         if c == 0: continue
         if c > 1: msg += str(c)
         if x == 1: msg += 'x'
-        if y == 1: msg += 'y'
         if x > 1: msg += 'x^' + str(x)
+        if y == 1: msg += 'y'
         if y > 1: msg += 'y^' + str(y)
         msg += ' + '
     return msg[:-3]
@@ -28,8 +28,8 @@ def binomial(n):
     print(binom_string(values, n))
     
     
-binomial(3)  # (x+y)^3 = y^3 + 3xy^2 + 3yx^2 + x^3
-binomial(5)  # (x+y)^5 = y^5 + 5xy^4 + 10x^2y^3 + 10x^3y^2 + 5yx^4 + x^5
+binomial(3)  # (x+y)^3 = y^3 + 3xy^2 + 3x^2y + x^3
+binomial(5)  # (x+y)^5 = y^5 + 5xy^4 + 10x^2y^3 + 10x^3y^2 + 5x^4y + x^5
 
 
         
