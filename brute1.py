@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-BANDIT24_PASS = 'UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ'
+BANDIT24_PASS = 'REDACTED'
 
 with open('pass.txt', 'w') as f:
     for i in range(10000):
